@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 23px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav-bar li {
+    border-right: 2px solid black;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav-bar li:last-child {
+    border-right: 0;
+}
+
+ul li a:hover {
+    color: rgb(106, 106, 106);
+    text-decoration: underline;
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.about-container {
+    display: flex;
+    float: fixed;
+    padding: 250px;
+    justify-content: center;
+}
+
+.intro-name {
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    align-items: center;
+}
+
+.typed-text {
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: black;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+    background-color: black;
+}
+
+@keyframes blink {
+    0% {
+        background-color: black;
+    }
+
+    49% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+@media all and (max-width:300px) {
+    ul {
+        width: 100%;
+        position: absolute;
+        top: 35px;
+        justify-content: center;
+        text-align: center;
+        z-index: 2;
+    }
+
+    ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
